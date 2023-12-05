@@ -1,0 +1,31 @@
+@media screen and (min-width: 350px) {
+    section ol.pokemon-list {
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    section ol.pokemon-list li.pokemon-item a ul.types li.type {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section ol.pokemon-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section ol.pokemon-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section ol.pokemon-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    li,span  {
+        font-size: 1.5rem;
+    }
+}

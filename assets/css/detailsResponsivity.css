@@ -1,0 +1,145 @@
+@media screen and (max-width: 729px) {
+    div#buttons-container,
+    div#version-button-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main#pokemon-main {
+        grid-template-columns: 1fr;
+
+        img {
+            align-self: center;
+        }
+    }
+
+    section#secundary-information {
+        grid-template-columns: 1fr;
+
+        aside#general-information {
+            flex-direction: column;
+        }
+     
+    }
+
+    section#pokemon-moves {
+        header {
+            grid-template-columns: 1fr;
+        }
+        div#tables-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+}
+
+@media screen and (max-width: 384px) {
+    section#pokemon-details-container {
+        align-items:center ;
+    }
+
+    div#buttons-container,
+    div#version-button-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    header#pokemon-presentation {
+        width: 95%;
+    }
+    main#pokemon-main {
+        width: 95%;
+    }
+    
+    section#secundary-information {
+        aside#general-information,
+        aside#pokemon-stats{
+            width: 95%;
+        }
+    }
+    
+    section#pokemon-moves{
+        header {
+            width: 95%;
+        }
+
+        table {
+            display: block;
+            width: 95%;
+            overflow-x: scroll;
+        }
+        
+    } 
+  
+}
+
+@media screen and (max-width:360px) {
+    section#pokemon-details-container {
+        align-items:center ;
+    }
+
+    div#buttons-container,
+    div#version-button-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    header#pokemon-presentation {
+        width: 90%;
+    }
+    main#pokemon-main {
+        width: 90%;
+    }
+    
+    section#secundary-information {
+        aside#general-information,
+        aside#pokemon-stats{
+            width: 90%;
+        }
+    }
+    
+    section#pokemon-moves{
+        header {
+            width: 90%;
+        }
+
+        table {
+            display: block;
+            width: 90%;
+            overflow-x: scroll;
+        }
+        
+    } 
+}
+
+@media screen and (max-width:340px) {
+    section#pokemon-details-container {
+        align-items:center ;
+    }
+
+    div#buttons-container,
+    div#version-button-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    header#pokemon-presentation {
+        width: 80%;
+    }
+    main#pokemon-main {
+        width: 80%;
+    }
+    
+    section#secundary-information {
+        aside#general-information,
+        aside#pokemon-stats{
+            width: 80%;
+        }
+    }
+    
+    section#pokemon-moves{
+        header {
+            width: 80%;
+        }
+
+        table {
+            display: block;
+            width: 80%;
+            overflow-x: scroll;
+        }
+        
+    } 
+}

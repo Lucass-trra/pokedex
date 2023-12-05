@@ -1,0 +1,213 @@
+/* global configurations */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+:root {
+    --default_color:orange;
+    --default_color_white: whitesmoke;
+    --default_color_black:#383838;
+    
+    --border-radius: .5rem;
+}
+
+
+
+div#buttons-container,
+div#version-button-container {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+    gap: .5rem;
+}
+
+button.descriptionByVersion,
+button.moveByVersion {
+    cursor: pointer;
+    padding: .2rem;
+    background: none;
+    border-color: var(--default_color);
+    border-radius: var(--border-radius);
+    transition: .5s ease-in-out;
+}
+
+button.descriptionByVersion:hover,
+button.moveByVersion:hover {
+    background-color: var(--default_color);
+}
+
+section#pokemon-details-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin:  .5rem;
+   
+}
+
+header#pokemon-presentation {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: .2rem solid black;
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    div#types{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        width: 20%;
+        margin-bottom: .5rem;
+    }
+    
+    span.type {
+        text-align: center;
+        width: 100%;
+        padding: .5rem;
+        border-radius: var(--border-radius)
+    }
+}   
+
+main#pokemon-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+   
+    img {
+        width: 50%;
+        margin-left: 20%;
+    }
+
+    p {
+        border-bottom: .2rem solid var(--default_color_black);
+        border-top: .2rem solid var(--default_color_black);
+        padding:.5rem ;
+    }
+}
+
+section#secundary-information {
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    gap: .7rem;
+    
+    aside#general-information {
+        display: flex;
+        justify-content: space-around;
+        gap: .7rem;
+       
+        p {
+            font-weight: bold;
+            color: var(--default_color);
+        }
+    
+        li {
+            margin-bottom: 1rem;
+            list-style: none;
+        }
+        
+        div#general-container,
+        div#abilities {
+            display: flex;
+            flex-direction: column;
+            gap:.2rem;
+            border: 2px solid var(--default_color);
+            width: 100%;
+            border-radius: .5rem;
+            padding: 1rem;
+        }
+    }
+    
+    aside#pokemon-stats {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid var(--default_color);
+        border-radius: var(--border-radius);
+        padding: 1rem;
+        width: 100%;
+    
+        li {
+            margin-bottom: .5rem;
+            list-style: none;
+        }
+        div.range {
+            height: 1.2rem;
+            border-radius: var(--border-radius);
+            background-color: var(--default_color);
+        }
+    }
+}
+
+section#pokemon-moves {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        border: .2rem solid var(--default_color);
+        padding: 1rem;
+        border-radius: var(--border-radius);
+        margin-bottom: 1rem;
+        gap: .5rem;
+    }
+
+    h2 {
+        align-self: center;
+    }
+
+    div#tables-container {
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
+
+    }
+    div.table {
+        margin: .5rem;
+    }
+
+    table {
+        overflow-x: scroll;
+        border: .1rem solid var(--default_color_black);
+        width: 100%;
+        border-radius: var(--border-radius);
+        
+        th {
+            position: sticky;
+            top: 0;
+            padding: .5rem;
+            background-color: var(--default_color)
+        }
+
+        tr:nth-child(2n +2) {
+            background-color: gainsboro;
+        }
+
+        td {
+            text-align: center;
+          
+        }
+
+        td.move-type {
+            display: flex;
+        }
+        span {
+            color: var(--default_color_white);
+            padding: .4rem;
+            width: 100%;
+            border-radius: var(--border-radius);
+            border: .2rem solid var(--default_color_black);
+            font-weight: bold;
+        }
+    }
+
+}
+
+
+
+
+
