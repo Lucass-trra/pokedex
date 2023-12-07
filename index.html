@@ -21,12 +21,32 @@
 </head>
 <body>
     <header>
-        <h1>Pokedex</h1>
-        <input type="text">
+        <div id="pokedex-presentation">
+            <h1>Pokedex</h1>
 
-        <select name="" id="">
-            <option value="">sasa</option>
-        </select>
+            <figure id="dark-light-container">
+                <img src="./assets/images/lamp.png" alt="dark-ligth-mode">
+            </figure>
+        </div>
+
+        <div id="pokedex-search">
+            <input type="text" placeholder="search your pokemon">
+        </div>
+
+
+        <div id="pokedex-sections">
+            <ul>
+                <li><a href="">moves</a></li>
+                <li><a href="">abilities</a></li>
+            </ul>
+
+            <select name="Ngenerations" id="generations">
+                <option value="" disabled selected>generation</option>
+                <option value="">1°generation</option>
+                <option value="">2°generation</option>
+                <option value="">3°generation</option>
+            </select>
+        </div>
     </header>
 
     <section class="pokemon-section">
