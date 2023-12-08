@@ -106,6 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         Array.from(movesHtmlElements).forEach((element) => {
             element.addEventListener("click",()=> {
+                const spanVersionName = document.getElementById("version-name")
+                spanVersionName.textContent = element.textContent;
+
                 const levelUp = document.getElementById("tBodyLevel-up")
                 const HmTm = document.getElementById("tBodyTM-HM")
                 const tutor = document.getElementById("tBodyTutor")

@@ -32,38 +32,33 @@
 
 }
 
-@media screen and (max-width: 384px) {
+@media screen and (max-width: 426px) {
     section#pokemon-details-container {
         align-items:center ;
     }
 
-    div#buttons-container,
-    div#version-button-container {
+    div#description-button-container,
+    div#move-button-container {
         grid-template-columns: 1fr 1fr;
     }
-    header#pokemon-presentation {
-        width: 95%;
-    }
-    main#pokemon-main {
-        width: 95%;
-    }
-    
-    section#secundary-information {
-        aside#general-information,
-        aside#pokemon-stats{
-            width: 95%;
-        }
-    }
-    
-    section#pokemon-moves{
-        header {
-            width: 95%;
-        }
 
+    header#pokemon-presentation {
+        div#types {
+            width: 50%;
+        }
+    }
+ 
+    section#pokemon-moves{
         table {
             display: block;
-            width: 95%;
+            width: 80%;
             overflow-x: scroll;
+        }
+
+        div#version-presentation {
+            span#version-name {
+                font-size: 1.5rem;
+            }
         }
         
     } 
@@ -79,28 +74,24 @@
     div#version-button-container {
         grid-template-columns: 1fr 1fr;
     }
+
     header#pokemon-presentation {
-        width: 90%;
+        div#types {
+            width: 100%;
+        }
     }
+
     main#pokemon-main {
-        width: 90%;
-    }
-    
-    section#secundary-information {
-        aside#general-information,
-        aside#pokemon-stats{
-            width: 90%;
+        img {
+            width: 100%;
+            margin-left: 0px;
         }
     }
     
     section#pokemon-moves{
-        header {
-            width: 90%;
-        }
-
         table {
             display: block;
-            width: 90%;
+            width: 50%;
             overflow-x: scroll;
         }
         
@@ -116,28 +107,10 @@
     div#version-button-container {
         grid-template-columns: 1fr 1fr;
     }
-    header#pokemon-presentation {
-        width: 80%;
-    }
-    main#pokemon-main {
-        width: 80%;
-    }
-    
-    section#secundary-information {
-        aside#general-information,
-        aside#pokemon-stats{
-            width: 80%;
-        }
-    }
-    
-    section#pokemon-moves{
-        header {
-            width: 80%;
-        }
 
+    section#pokemon-moves{
         table {
             display: block;
-            width: 80%;
             overflow-x: scroll;
         }
         
