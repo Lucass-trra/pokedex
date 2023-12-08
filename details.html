@@ -13,10 +13,147 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <section id="pokemon-details-container">
-   
+    <header id="pokemon-presentation">
+        
+    </header>
+    
+    <main id="pokemon-main">
+        <img id="pokemon-image" src="" alt="">
+
+        <div id="description-button-container">
+            
+        </div>
+
+        <p id="pokemon-description"></p>
+    </main>
+
+    <section id="secundary-information">
+        <aside id="general-information">
+        
+            <div id="general-container">
+                <h2>General</h2>
+            </div>
+        
+            <div id="abilities">
+                <h3>Abilities</h3>
+                <ul id="abilitiesList">
+                   
+                </ul>
+            </div>
+        </aside>
+    
+        <aside id="pokemon-stats">
+            <h2>Stats</h2> 
+            <ul id="statsList">
+               
+            </ul>  
+        </aside>
     </section>
+    
+    
+    
+    <section id="pokemon-moves">
+        <header>
+            <h2>total moves learned by this pokemon</h2>
+
+            <div id="move-button-container">
+                
+            </div>
+
+        </header>
+
+        <div id="tables-container">
+            <div class="table">
+                <h2>lernned by egg</h2>
+
+                <table>
+                    <thead>
+                        <th>name</th> 
+                        <th>type</th>
+                        <th>accuracy</th>
+                        <th>damage class</th>
+                        <th>power</th>
+                        <th>pp</th>
+                    </thead>
+
+                    <tbody id="tBodyEgg"></tbody>
+                    
+                    <tfoot>
+                        <td colspan="8">table of moves to this pokemon </td>
+                    </tfoot>
+                </table>
+            </div>
+    
+            <div class="table">
+                <h2>lernned by tutor</h2>
+
+                <table>
+                    <thead>
+                        <th>name</th> 
+                        <th>type</th>
+                        <th>accuracy</th>
+                        <th>damage class</th>
+                        <th>power</th>
+                        <th>pp</th>
+                    </thead>
+
+                    <tbody id="tBodyTutor"></tbody>
+                    
+                    <tfoot>
+                        <td colspan="8">table of moves to this pokemon </td>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="table">
+                <h2>lernned by TM or HM</h2>
+
+                <table>
+                    <thead>
+                        <th>name</th> 
+                        <th>type</th>
+                        <th>accuracy</th>
+                        <th>damage class</th>
+                        <th>power</th>
+                        <th>pp</th>
+                    </thead>
+
+                    <tbody id="tBodyTM-HM"></tbody>
+                    
+                    <tfoot>
+                        <td colspan="8">table of moves to this pokemon </td>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="table">
+                <h2>learned by level up</h2>
+
+                <table>
+                    <thead>
+                        <th>name</th> 
+                        <th>type</th>
+                        <th>accuracy</th>
+                        <th>damage class</th>
+                        <th>power</th>
+                        <th>pp</th>
+                    </thead>
+
+                    <tbody id="tBodyLevel-up"></tbody>
+
+                    <tfoot>
+                        <td colspan="8">lernned by level up</td>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+
+
     <script src="./assets/js/poke-model.js" ></script>
     <script src="./assets/js/poke-api.js" ></script>
     <script src="./assets/js/poke-details.js"></script>

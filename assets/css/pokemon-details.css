@@ -7,6 +7,13 @@
     
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: .5rem;
+}
+
 :root {
     --default_color:orange;
     --default_color_white: whitesmoke;
@@ -17,8 +24,8 @@
 
 
 
-div#buttons-container,
-div#version-button-container {
+div#description-button-container,
+div#move-button-container {
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
     gap: .5rem;
@@ -37,15 +44,6 @@ button.moveByVersion {
 button.descriptionByVersion:hover,
 button.moveByVersion:hover {
     background-color: var(--default_color);
-}
-
-section#pokemon-details-container {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr;
-    padding: 0;
-    margin:  .5rem;
-   
 }
 
 header#pokemon-presentation {
