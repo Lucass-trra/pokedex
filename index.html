@@ -18,40 +18,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
 
+    <!-- components -->
+   <script src="./components/headerTemplate.js" defer></script>
+
 </head>
 <body>
-    <header>
-        <div id="pokedex-presentation">
-            <h1>Pokedex</h1>
-
-            <figure id="dark-light-container">
-                <img src="./assets/images/lamp.png" alt="dark-ligth-mode">
-            </figure>
-        </div>
-
-        <div id="pokedex-search">
-            <input type="text" placeholder="search your pokemon">
-        </div>
-
-
-        <div id="pokedex-sections">
-            <ul>
-                <li><a href="">moves</a></li>
-                <li><a href="">abilities</a></li>
-            </ul>
-
-            <select name="Ngenerations" id="generations">
-                <option value="" disabled selected>generation</option>
-                <option value="">1°generation</option>
-                <option value="">2°generation</option>
-                <option value="">3°generation</option>
-            </select>
-        </div>
-    </header>
+    <header-template
+        title="Poke"
+        subTitle="dex"
+        placeholder="search your pokemon"
+        sections="moves,abilities"
+        generations
+    >
+    </header-template>
 
     <section class="pokemon-section">
-        
-
         <ol id="pokemon-list-id" class="pokemon-list">
           
         </ol>
