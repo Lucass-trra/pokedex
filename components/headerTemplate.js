@@ -24,6 +24,7 @@ class HeaderTemplate extends HTMLElement {
             <div id="pokedex-search">
                 <input 
                 type="text" 
+                id="search-pokemon"
                 placeholder="${this.getAttribute("placeholder") || "default text"}"
                 >
             </div>
@@ -60,9 +61,13 @@ class HeaderTemplate extends HTMLElement {
                 display: grid;
                 grid-template-columns: 1fr;
                 margin: .5rem;
+                background-color:var(--default_color);
                 border: 2px solid var(--default_color);
                 border-radius:1rem;
                 padding:1rem ;
+                position: sticky;
+                top: 0;
+                z-index:1;
             
                 div#pokedex-sections {
                     display: flex;
@@ -82,15 +87,16 @@ class HeaderTemplate extends HTMLElement {
                 
                     select {
                         padding: .9rem;
-                        border: 2px solid var(--default_color);
+                        border: 2px solid var(--default_color_black);
                         border-radius:.3rem;
                         background: none;
                         cursor: pointer;
                         font-size: 1.2rem;
+                        font-weight: bold;
                     }
                 
                     li {
-                        border-bottom: 2px solid var(--default_color);
+                        border-bottom: 2px solid var(--default_color_black);
                         padding: .5rem;
                         border-radius: 0px;
                         transition: .3s ease-in-out;
@@ -98,13 +104,15 @@ class HeaderTemplate extends HTMLElement {
                     }
             
                     li:hover {
-                        background-color: var(--default_color);
+                        background-color: var(--default_color_black);
                         border-radius: .5rem;
+                        color:;
                     }
                 
                     a {
                         text-decoration: none;  
-                        color:black;
+                        color:var(--default_color_white);
+                        font-size: 1.3rem;
                     }
                 }
             
@@ -114,7 +122,7 @@ class HeaderTemplate extends HTMLElement {
                     width: 60%;
                     
                     h1 {
-                        color: var(--default_color);
+                        color: var(--default_color_white);
                         span {
                             color: var(--default_color_black);
                         }
